@@ -217,7 +217,7 @@
 					
 					var titleDiv = document.createElement( 'h4' );
 					titleDiv.className = 'panel-title';
-					titleDiv.innerHTML = '<a data-toggle="collapse" href="#' + table[ i ] + '1">' + table[ i ] + '</a>';
+					titleDiv.innerHTML = '<a data-toggle="collapse" href="#' + table[ i ] + '1">' + table[ i + 1 ] + '</a>';
 					headDiv.appendChild( titleDiv );
 					panelDiv.appendChild( headDiv );
 					
@@ -227,7 +227,7 @@
 					
 					var panbodyDiv = document.createElement( 'div' );
 					panbodyDiv.className = 'panel-body';
-					panbodyDiv.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ];
+					panbodyDiv.innerHTML = table[ i ] + '<br>' + table[ i + 2 ];
 					
 					collDiv.appendChild( panbodyDiv );
 					panelDiv.appendChild( collDiv );
@@ -327,32 +327,32 @@
 				var button = document.getElementById( 'table' );
 				button.addEventListener( 'click', function ( event ) {
 
-					transform( targets.table, 2000 );
+					transform( targets.table, 200 );
 
 				}, false );
 
 				var button = document.getElementById( 'sphere' );
 				button.addEventListener( 'click', function ( event ) {
 
-					transform( targets.sphere, 2000 );
+					transform( targets.sphere, 200 );
 
 				}, false );
 
 				var button = document.getElementById( 'helix' );
 				button.addEventListener( 'click', function ( event ) {
 
-					transform( targets.helix, 2000 );
+					transform( targets.helix, 200 );
 
 				}, false );
 
 				var button = document.getElementById( 'grid' );
 				button.addEventListener( 'click', function ( event ) {
 
-					transform( targets.grid, 2000 );
+					transform( targets.grid, 200 );
 
 				}, false );
 
-				transform( targets.table, 2000 );
+				transform( targets.table, 800 );
 
 				//
 
