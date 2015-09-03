@@ -38,15 +38,15 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View Options <span class="caret"></span></a>
+						<ul class="dropdown-menu" id="dropmenu">
+							<li id="collapse-init"><a href="#">Expand/Collapse All</a></li>
 							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
+							<li class="dropdown-header">3D Orientation</li>
+							<li id="table"><a href="#">Table</a></li>
+							<li id="sphere"><a href="#">Sphere</a></li>
+							<li id="helix"><a href="#">Helix</a></li>
+							<li id="grid"><a href="#">Grid</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -55,16 +55,8 @@
 		</nav>
 		<!--three.js render scene-->
 		<div id="container"></div>
-		<div id="menu">
-			<button id="collapse-init">EXPAND ALL</button>
-			<button id="table">TABLE</button>
-			<button id="sphere">SPHERE</button>
-			<button id="helix">HELIX</button>
-			<button id="grid">GRID</button>
-		</div>
-		
 		<script>
-
+			
 			var table = [
 				"H", "Hydrogen", "1.00794", 1, 1,
 				"He", "Helium", "4.002602", 18, 1,
@@ -104,6 +96,8 @@
 				"Kr", "Krypton", "83.798", 18, 4,
 			];
 
+			var active = true;
+
 			var camera, scene, renderer;
 			var controls;
 
@@ -116,7 +110,7 @@
 			function init() {
 
 				camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
-				camera.position.z = 3000;
+				camera.position.z = 2200;
 
 				scene = new THREE.Scene();
 
@@ -188,11 +182,10 @@
 					object.lookAt( vector );
 
 					targets.sphere.push( object );
-
 				}
-
+				
 				// helix
-
+				
 				var vector = new THREE.Vector3();
 
 				for ( var i = 0, l = objects.length; i < l; i ++ ) {
@@ -212,7 +205,6 @@
 					object.lookAt( vector );
 
 					targets.helix.push( object );
-
 				}
 
 				// grid
@@ -226,17 +218,12 @@
 					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
 
 					targets.grid.push( object );
-
 				}
-
-				//
 
 				renderer = new THREE.CSS3DRenderer();
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				renderer.domElement.style.position = 'absolute';
 				document.getElementById( 'container' ).appendChild( renderer.domElement );
-
-				//
 
 				controls = new THREE.TrackballControls( camera, renderer.domElement );
 				controls.rotateSpeed = 0.5;
@@ -273,9 +260,7 @@
 				}, false );
 
 				transform( targets.table, 800 );
-
-				//
-
+				
 				window.addEventListener( 'resize', onWindowResize, false );
 
 			}
@@ -305,56 +290,40 @@
 					.to( {}, duration * 2 )
 					.onUpdate( render )
 					.start();
-
 			}
 
 			function onWindowResize() {
-
 				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
-
 				renderer.setSize( window.innerWidth, window.innerHeight );
-
 				render();
-
 			}
 
 			function animate() {
-
 				requestAnimationFrame( animate );
-
 				TWEEN.update();
-
 				controls.update();
-
 			}
 
 			function render() {
-
 				renderer.render( scene, camera );
-
 			}
 			
-			var active = true;
 			
 			$('#collapse-init').click(function () {
-				var myText = '';
 				if (active) {
 					active = false;
-					myText = 'COLLAPSE ALL'
 					$('.panel-collapse').collapse('show');
 					$('.panel-title').attr('data-toggle', '');
-					console.log('Reveal!');
+					//$(this).text('Collapse all');
 				} else {
 					active = true;
-					myText = 'EXPAND ALL';
 					$('.panel-collapse').collapse('hide');
 					$('.panel-title').attr('data-toggle', 'collapse');
-					console.log('Hide!');
+					//$(this).text('Expand all');
 				}
-				$(this).text(myText);
 			});
-			
+
 			$('.panel-collapse').collapse('hide');
 			$('.panel-title').attr('data-toggle', 'collapse');
 		</script>
