@@ -1,0 +1,114 @@
+{
+    "name": "Erdovan",
+    "children": [
+      {
+        "name": "Sylvan",
+        "children": [
+          {
+            "name": "Blessings",
+            "children": [
+              {
+                "name": "Smarts", "colour": "#aaa1cc"
+              },
+              {
+                "name": "Iginuity", "colour": "#e0b5c9"
+              }
+            ]
+          },
+          {
+            "name": "Curses",
+            "children": [
+              {
+                "name": "Apathy", "colour": "#e098b0"
+              },
+              {
+                "name": "Shame", "colour": "#ee82a2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alpin",
+        "children": [
+          {
+            "name": "Blessings",
+            "children": [
+              {
+                "name": "Heartiness", "colour": "#aaa1cc"
+              },
+              {
+                "name": "Resolve", "colour": "#e0b5c9"
+              }
+            ]
+          },
+          {
+            "name": "Curses",
+            "children": [
+              {
+                "name": "Temper", "colour": "#e098b0"
+              },
+              {
+                "name": "Pride", "colour": "#ee82a2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zavin",
+        "children": [
+          {
+            "name": "Blessings",
+            "children": [
+              {
+                "name": "Community", "colour": "#aaa1cc"
+              },
+              {
+                "name": "Resiliance", "colour": "#e0b5c9"
+              }
+            ]
+          },
+          {
+            "name": "Curses",
+            "children": [
+              {
+                "name": "Rage", "colour": "#e098b0"
+              },
+              {
+                "name": "Absent Minded", "colour": "#ee82a2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exomer",
+        "children": [
+          {
+            "name": "Blessings",
+            "children": [
+              {
+                "name": "Magic", "colour": "#aaa1cc"
+              },
+              {
+                "name": "Loyalty", "colour": "#e0b5c9"
+              }
+            ]
+          },
+          {
+            "name": "Curses",
+            "children": [
+              {
+                "name": "Curiosity", "colour": "#e098b0"
+              },
+              {
+                "name": "Stubborn", "colour": "#ee82a2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+ }
+

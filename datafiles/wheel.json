@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Tastes",
+    "children": [
+      {
+        "name": "Bitter",
+        "children": [
+          {
+            "name": "Pungent",
+            "children": [
+              {
+                "name": "Creosol", "colour": "#aaa1cc"
+              },
+              {
+                "name": "Phenolic", "colour": "#e0b5c9"
+              }
+            ]
+          },
+          {
+            "name": "Harsh",
+            "children": [
+              {
+                "name": "Caustic", "colour": "#e098b0"
+              },
+              {
+                "name": "Alkaline", "colour": "#ee82a2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salt",
+        "children": [
+          {
+            "name": "Sharp",
+            "children": [
+              {
+                "name": "Astringent", "colour": "#ef91ac"
+              },
+              {
+                "name": "Rough", "colour": "#eda994"
+              }
+            ]
+          },
+          {
+            "name": "Bland",
+            "children": [
+              {
+                "name": "Neutral", "colour": "#eeb798"
+              },
+              {
+                "name": "Soft", "colour": "#ecc099"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sweet",
+        "children": [
+          {
+            "name": "Mellow",
+            "children": [
+              {
+                "name": "Delicate", "colour": "#f6d5aa"
+              },
+              {
+                "name": "Mild", "colour": "#f0d48a"
+              }
+            ]
+          },
+          {
+            "name": "Acidy",
+            "children": [
+              {
+                "name": "Nippy", "colour": "#efd95f"
+              },
+              {
+                "name": "Piquant", "colour": "#eee469"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sour",
+        "children": [
+          {
+            "name": "Winey",
+            "children": [
+              {
+                "name": "Tangy", "colour": "#dbdc7f"
+              },
+              {
+                "name": "Tart", "colour": "#dfd961"
+              }
+            ]
+          },
+          {
+            "name": "Soury",
+            "children": [
+              {
+                "name": "Hard", "colour": "#ebe378"
+              },
+              {
+                "name": "Acrid", "colour": "#f5e351"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
