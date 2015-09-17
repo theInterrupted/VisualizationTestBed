@@ -61,7 +61,9 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
 	.on("mousedown", mousedown);
-		 
+
+var countries = {};	
+
 queue()
     .defer(d3.json, "datafiles/world-110m.json")
     .defer(d3.tsv, "datafiles/world-country-names.tsv")
@@ -75,7 +77,6 @@ function ready(error, world, names) {
 	//    .datum({type: "Sphere"})
 	//    .attr("id", "sphere")
 	 //   .attr("d", path);
-  var countries = {};
   names.forEach(function(n){
 	countries[n.id] = n.name;
   });
@@ -141,9 +142,7 @@ function ready(error, world, names) {
          .data(topojson.object(world, world.objects.countries).geometries)
        .enter().append("path")
          .attr("d", path)
-	   .on("click", function(d){
-			alert(countries[d.id]);
-		});
+	   .on("click", mouseclick);
 }
 
 d3.select(self.frameElement).style("height", height + "px");
@@ -172,6 +171,10 @@ function mouseup() {
     mousemove();
     m0 = null;
   }
+}
+
+function mouseclick(d) {
+	alert(countries[d.id]);
 }
 
 </script>
