@@ -1,0 +1,162 @@
+{
+"races": [
+	{
+		"name": "Sylvan",
+		"description": "The Sylvan are the woodland descendants, bearing semblance to apes. They emerged standing upright, with various brown shaded skin, overall little body hair, and innately industrious hands. They are blessed with quick minds and creativity, but are cursed with apathy and shame.",
+		"stature": 5,
+		"speed": "average",
+		"traits":[
+			"charisma": 2,
+			"grit": 2,
+			"creativity": 4,
+			"muscle": 2,
+			"hide": 1,
+			"seek": 2,
+			"scamper": 2,
+			"scrap": 4,
+			"throw": 2,
+			"sense": 1
+		],
+		"abilities": [
+			"abil_studious",
+			"abil_apathy",
+			"abil_stallegs"
+		]
+	},
+	{
+		"name": "Pelagus",name": "
+		"description": "The Pelagus are children of the seas, bearing semblance to octopuses. They possess large body-heads with deep-set eyes, 8 tentacle arms, and feature skin that each Pelagian can control color and texture. They are blessed with patience and resolve, but are cursed with greed and wrath.",description": "
+		"stature": "4",stature": "
+		"speed": "average",speed": "
+		"charisma": "3",charisma": "
+		"grit": "3",grit": "
+		"creativity": "1",creativity": "
+		"muscle": "2",muscle": "
+		"hide": "4",hide": "
+		"seek": "1",seek": "
+		"scamper": "1",scamper": "
+		"scrap": "1",scrap": "
+		"throw": "1",throw": "
+		"sense": "4",sense": "
+		"Ability": "
+		  "name": "Blessing",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "+1 to Communication Trait at character creation.",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Curse",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "Must succeed at a Grit test equal to the team size in order to contribute a teamwork bonus. And when deeply angered, -1 penalty to all tasks unrelated to vengeful efforts until revenge has been dealt.",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Master of the Seas",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "Pelagus have 8 prehensile, fully usable arms, and for any applicable check where more than 2 arms are used, a +1 bonus is added per extra pair of arms used. The Pelagus can also breath water, but not air. Out of the water they suffer -1 penalties to all tests, and must take Drowning tests until they return to the water.",details": "
+	   ",Ability": "
+	},
+	{
+		"name": "Zavyn",name": "
+		"description": "The Zavyn were borne of the grasslands and savannas, bearing semblance to cacos [cacomistle]. They possess medium-size bodies covered in short brown fur, clawed hands and feet, sharp facial features, and a notably long, striped tail. They normally travel on all-fours, but can stand and walk upright for short distances. They are blessed with resourcefulness and stalwart community, but are cursed with short-sightedness and a hot temper.",description": "
+		"stature": "4",stature": "
+		"speed": "fast",speed": "
+		"charisma": "2",charisma": "
+		"grit": "1",grit": "
+		"creativity": "4",creativity": "
+		"muscle": "1",muscle": "
+		"hide": "4",hide": "
+		"seek": "1",seek": "
+		"scamper": "4",scamper": "
+		"scrap": "1",scrap": "
+		"throw": "1",throw": "
+		"sense": "3",sense": "
+		"Ability": "
+		  "name": "Blessing",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "+1 bonus to checks to ask for aide or information from other Zavyn.",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Curse",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "-1 penalty to all checks regarding preparation for travel or a lengthy task. -1 penalty to Grit for one round when insulted or frustrated due to failing trait tests.",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Agile Climber",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "Zavyn get a +1 bonus to Muscle checks to climb natural obstacles.",details": "
+	   ",Ability": "
+	},
+	{
+		"name": "Alpyn",name": "
+		"description": "The Alpyn are children of the mountains, bearing semblance to the bearcat. They possess large bodies of thick, long fur, clawed hands and feet, a broad face, long whiskers, and a thick prehensile tail. They always travel on all-fours, but can stand upright if needed. They are adept climbers and mountaineers. They are blessed with strength and endurance, but are cursed with arrogance and impulsiveness.",description": "
+		"stature": "5",stature": "
+		"speed": "average",speed": "
+		"charisma": "1",charisma": "
+		"grit": "4",grit": "
+		"creativity": "1",creativity": "
+		"muscle": "4",muscle": "
+		"hide": "1",hide": "
+		"seek": "2",seek": "
+		"scamper": "1",scamper": "
+		"scrap": "3",scrap": "
+		"throw": "2",throw": "
+		"sense": "3",sense": "
+		"Ability": "
+		  "name": "Blessing",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "Strength and endurance (already added to base abilities)",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Curse",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "When leading a teamwork effort, contributes one less die. -1 penalty to checks against the Temptation of a problem in plain sight you perceive you can resolve.",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Rugged Coat",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "An Alpyn's coat provides significant protection from the elements. Alpyn are immune to cold effects from natural weather.",details": "
+	   ",Ability": "
+	},
+	{
+		"name": "Exomer",name": "
+		"description": "The Exomer descended from the ether, bearing no particular semblance, because they are shape-shifters. They're telling feature is a faint, mist-like aura, unique in colour and appearance to each Exomer, in whatever form they take. Exomer commit themselves to seek companionship with non-Exomers, and rarely are more than two Exomers seen together. They are blessed with a natural proficiency with magicks and loyalty, but cursed with unrelenting curiosity and stubbornness. ",description": "
+		"stature": "4",stature": "
+		"speed": "fast",speed": "
+		"charisma": "2",charisma": "
+		"grit": "4",grit": "
+		"creativity": "1",creativity": "
+		"muscle": "1",muscle": "
+		"hide": "1",hide": "
+		"seek": "4",seek": "
+		"scamper": "3",scamper": "
+		"scrap": "3",scrap": "
+		"throw": "2",throw": "
+		"sense": "1",sense": "
+		"Ability": "
+		  "name": "Blessing",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "At character creation, add 1 level to any one Magic trait. +1 bonus to all Magic and combat tests when guarding a companion.",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Curse",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "-2 penalty on Temptation tests regarding asking even the most inappropriate questions, handling unique items, eavesdropping, or exploring unfamiliar areas in a city.",details": "
+	   ",Ability": "
+		"Ability": "
+		  "name": "Shapeshifting",name": "
+		  "level": "0",level": "
+		  "prereq": "",prereq": "
+		  "details": "An Exomer can change their appearance by taking a full round to do so, shifting into the natural form of another creature of equivalent stature. The form taken cannot grant them any extra abilities, physical or otherwise, that they already do not possess, e.g. changing into a Pelagus does not grant effective use of multiple arms or water breathing.",details": "
+	   ",Ability": "
+	}
+]}

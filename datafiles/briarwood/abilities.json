@@ -1,0 +1,19 @@
+{
+	"abilities":[
+		"abil_studious": {
+			"type": "blessing",
+			"name": "Studious",
+			"desc": "At character creation, start with 1 level in one studied trait.",
+			"lvlreq": 0,
+			"prereq": []
+		},
+		"abil_apathy" : {
+			"type": "curse",
+			"name": "Apathy",
+			"desc": "-1 penalty to non-combat checks with people who are not companions, family, or close allies. -1 penalty on Despair checks when the character has recently been mocked or failed at a task.",
+			"lvlreq": 0,
+			"prereq": []
+		},
+		
+	]
+}

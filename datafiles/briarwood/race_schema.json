@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"type": object,
+	"propertoes": {
+		"name": {"type": "string"},
+		"description": {"type": "string"},
+		"stature": {"type": "number", "minimum": 1,	"maximum": 5},
+		"speed": {"type": "string"},
+		"charisma": {"type": "number", "minimum": 1,	"maximum": 5},
+		"grit": {"type": "number", "minimum": 1,	"maximum": 5},
+		"creativity": {"type": "number", "minimum": 1,	"maximum": 5},
+		"muscle": {"type": "number", "minimum": 1,	"maximum": 5},
+		"hide": {"type": "number", "minimum": 1,	"maximum": 5},
+		"seek": {"type": "number", "minimum": 1,	"maximum": 5},
+		"scamper": {"type": "number", "minimum": 1,	"maximum": 5},
+		"scrap": {"type": "number", "minimum": 1,	"maximum": 5},
+		"throw": {"type": "number", "minimum": 1,	"maximum": 5},
+		"sense": {"type": "number", "minimum": 1,	"maximum": 5},
+		"traits": {"type": "array", "items": {"type": "number"}, "minItems": 2, "uniqueItems": true}
+	}	
+}
