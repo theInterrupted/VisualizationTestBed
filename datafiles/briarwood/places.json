@@ -1,0 +1,276 @@
+{
+"type": "FeatureCollection",
+"features": [
+	{"type": "Feature", "properties": {
+		"name": "Fireborne",
+		"homeland": "Seatt Empire",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 15.66189329197243,-0.1754523572668128]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Briarwood",
+		"homeland": "Freelands",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 1.977934834269217,-6.618055564098405]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Faeron",
+		"homeland": "Seatt Empire",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 35.14797172455214,13.14210026693062]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "The Crest",
+		"homeland": "Kinter",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 19.14449077390597,30.42113665073035]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Ridgeraven",
+		"homeland": "Republic of Eyr",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 22.42742702698471,38.42690074613962]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Nazarat",
+		"homeland": "Kingdom of Drazul",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 6.248891684791449,24.78963319536074]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Zederas",
+		"homeland": "Kingdom of Drazul",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 4.685783019880432,48.4071664988959]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "White Crest",
+		"homeland": "Kingdom of Galmer",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 28.90144349973443,57.84422385507771]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Kaskade",
+		"homeland": "Caern Falls",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -1.759850708197089,24.33843850480418]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Featherwood",
+		"homeland": "Denmother",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -3.821202226518523,48.23292443114403]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Gelton",
+		"homeland": "Denmother",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -1.999213521312168,40.51008137803639]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Ardon",
+		"homeland": "Silver Lakes",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -0.09590591336207877,33.08518693766699]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Cannon Ridge",
+		"homeland": "Gunwick",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -7.013157401240732,27.2805477054807]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Mogeda",
+		"homeland": "Dortmer",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 1.621905064676772,5.222698435882334]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Hunter's Keep",
+		"homeland": "Hunter's Dark Forest",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 29.63821830838353,-8.465852205133126]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Laine",
+		"homeland": "Erdon's Rest",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 37.57617513136277,-2.575685648512252]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Canedon",
+		"homeland": "Sweet Coast Islands",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 59.79330590730158,16.83290155839691]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Havon",
+		"homeland": "Eterdaven",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 36.83730333365303,37.91892841865423]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Phorom",
+		"homeland": "Phoros",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 14.78842536208825,51.84505381680052]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Magisteria",
+		"homeland": "Seatt Empire",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 19.02941749762937,-6.126739243389618]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Wynndom",
+		"homeland": "Quio",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 43.11103166763789,14.03626665294913]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Wilthorn",
+		"homeland": "Blackweir",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 26.72495811895683,27.54796538325368]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Serena",
+		"homeland": "Skyland",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 28.42025287487232,33.22631346406842]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Marr",
+		"homeland": "Kesh",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 30.26019458613207,45.38286260812813]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Mestion",
+		"homeland": "Moteska",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 31.02475753003994,49.10155561599597]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Firbelk",
+		"homeland": "Helkrest",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -7.160117206921233,30.82237273345059]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Smithy",
+		"homeland": "Grayforge",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -2.825002882042507,30.80600948896067]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Sanis",
+		"homeland": "Sinos",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 1.478300218227369,22.07124321268532]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Mothworm",
+		"homeland": "Normer",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ 1.490724023120307,19.27989890510943]} 
+	},
+	{"type": "Feature", "properties": {
+		"name": "Pelageon",
+		"homeland": "The Tar Pits",
+		"note": null
+	},
+		"geometry": {
+		 "type": "Point",
+		"coordinates": [ -17.36960048995114,18.79831318720401]} 
+	}
+	
+]
+}

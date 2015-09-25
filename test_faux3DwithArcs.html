@@ -158,13 +158,15 @@ function ready(error, world, places) {
         .attr("class","noclicks")
         .style("fill", "url(#globe_shading)");
 
-    svg.append("g").attr("class","points")
+    svg.append("g")
+		.attr("class","points")
         .selectAll("text").data(places.features)
       .enter().append("path")
         .attr("class", "point")
         .attr("d", path);
 
-    svg.append("g").attr("class","labels")
+    svg.append("g")
+		.attr("class","labels")
         .selectAll("text").data(places.features)
       .enter().append("text")
       .attr("class", "label")

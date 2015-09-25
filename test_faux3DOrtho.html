@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
+<title>Faux 3D Ortho</title>
 <style>
 
 .land {
-  fill: rgb(117, 87, 57);
+  stroke: rgb(80, 64, 39);  
+  stroke-linejoin: round;
+  stroke-width:1;
+  fill: rgb(50,50,50);
+  fill-opacity:.5;
   stroke-opacity: 1;
 }
 
 .countries path {
   stroke: rgb(80, 64, 39);  
   stroke-linejoin: round;
-  stroke-width:.5;
-  fill: rgb(117, 87, 57);
-  opacity: .1;
+  stroke-width:1;
+  fill: rgb(90,200,58);
+  fill-opacity:.1;
+  opacity: 1;
 }
 
 .countries path:hover {
-  fill-opacity:.1;
-  stroke-width:1;
+  fill-opacity:1;
+  stroke-width:2;
   opacity: 1;
 }
 
@@ -46,11 +52,11 @@ d3.select(window)
     .on("mousemove", mousemove)
     .on("mouseup", mouseup);
 
-var width = 800,
-    height = 800;
+var width = 1000,
+    height = 1000;
 
 var projection = d3.geo.orthographic()
-    .scale(390)
+    .scale(500)
     .translate([width / 2, height / 2])
     .clipAngle(90);
     //.precision(.1);
@@ -65,18 +71,19 @@ var svg = d3.select("body").append("svg")
 var countries = {};	
 
 queue()
-    .defer(d3.json, "datafiles/world-110m.json")
-    .defer(d3.tsv, "datafiles/world-country-names.tsv")
+    .defer(d3.json, "datafiles/briarwood/newworld_topo_highres.json") //world-110m.json")
+    .defer(d3.tsv, "datafiles/newworld-country-names.tsv") //"world-country-names.tsv")
     .await(ready);
 		 
 		 
 function ready(error, world, names) {
   if (error) throw error;
 	
-	//svg.append("defs").append("path")
-	//    .datum({type: "Sphere"})
-	//    .attr("id", "sphere")
-	 //   .attr("d", path);
+	svg.append("defs").append("path")
+	    .datum({type: "Sphere"})
+	    .attr("id", "sphere")
+	    .attr("d", path);
+		
   names.forEach(function(n){
 	countries[n.id] = n.name;
   });
@@ -117,12 +124,6 @@ function ready(error, world, names) {
 		.attr("r", projection.scale())
 		.attr("class", "noclicks")
 		.style("fill", "url(#ocean_fill)");
-	
-	// Land mass
-	svg.append("path")
-        .datum(topojson.object(world, world.objects.land))
-        .attr("class", "land")
-        .attr("d", path);
 
 	svg.append("circle")
 		.attr("cx", width / 2).attr("cy", height / 2)

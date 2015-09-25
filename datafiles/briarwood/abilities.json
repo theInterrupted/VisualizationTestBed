@@ -1,19 +1,172 @@
 {
 	"abilities":[
-		"abil_studious": {
+		{
+			"id": 10,
+			"name": "Creativity",
 			"type": "blessing",
-			"name": "Studious",
-			"desc": "At character creation, start with 1 level in one studied trait.",
+			"desc": "Something about a +1 to problem solving, creative outlet, and what not.",
 			"lvlreq": 0,
 			"prereq": []
 		},
-		"abil_apathy" : {
-			"type": "curse",
+		{
+			"id": 11,
 			"name": "Apathy",
+			"type": "curse",
 			"desc": "-1 penalty to non-combat checks with people who are not companions, family, or close allies. -1 penalty on Despair checks when the character has recently been mocked or failed at a task.",
 			"lvlreq": 0,
 			"prereq": []
 		},
-		
+		{
+			"id": 12,
+			"name": "Shame",
+			"type": "curse",
+			"desc": "-1 penalty on Despair checks when the character has recently been mocked or failed at a task.",
+			"lvlreq": 0,
+			"prereq": []
+		},
+		{
+			"id": 13,
+			"name": "Stalwart Legs",
+			"type": "blessing",
+			"desc": "Something about +1 to prolonged physical activity",
+			"lvlreq": 0,
+			"prereq": []
+		},
+		{
+			"id": 20,
+			"name": "Communication Specialist",
+			"type": "blessing",
+			"desc": "+1 to Communication Trait at character creation.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 21,
+			"name": "Solitude",
+			"type": "curse",
+			"desc": "Must succeed at a Grit test equal to the team size in order to contribute a teamwork bonus.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 22,
+			"name": "Fury",
+			"type": "curse",
+			"desc": "When deeply angered, -1 penalty to all tasks unrelated to vengeful efforts until revenge has been dealt",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 23,
+			"name": "Master of the Seas",
+			"type": "innate",
+			"desc": "Pelagus have 8 prehensile, fully usable arms, and for any applicable check where more than 2 arms are used, a +1 bonus is added per extra pair of arms used. The Pelagus also breath water, but not air. Out of the water they suffer -1 penalties to all tests, and must take Drowning tests until they return to the water.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 30,
+			"name": "Stalwart Community",
+			"type": "blessing",
+			"desc": "+1 bonus to checks to ask for aide or information from other Zavyn.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 31,
+			"name": "Shortsighted",
+			"type": "curse",
+			"desc": "-1 penalty to all checks regarding preparation for travel or a lengthy task.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 32,
+			"name": "Agile Climber",
+			"type": "innate",
+			"desc": "Zavyn get a +1 bonus to Muscle checks to climb natural obstacles.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 33,
+			"name": "Temper",
+			"type": "curse",
+			"desc": "-1 penalty to Grit for one round when insulted or frustrated due to failing trait tests.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 41,
+			"name": "Prowess",
+			"type": "blessing",
+			"desc": "Strength and endurance (already added to base abilities)",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 42,
+			"name": "Rugged Coat",
+			"type": "innate",
+			"desc": "An Alpyn's coat provides significant protection from the elements. Alpyn are immune to cold effects from natural weather.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 43,
+			"name": "Arrogance",
+			"type": "curse",
+			"desc": "When leading a teamwork effort, contributes one less die.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 44,
+			"name": "Impulsive",
+			"type": "curse",
+			"desc": "-1 penalty to checks against the Temptation of a problem in plain sight you perceive you can resolve.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 50,
+			"name": "Innate Magic",
+			"type": "blessing",
+			"desc": "At character creation, add 1 level to any one Magic trait.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 51,
+			"name": "Loyalty",
+			"type": "blessing",
+			"desc": "+1 bonus to all Magic and combat tests when guarding a companion.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 52,
+			"name": "Stubborn Curiosity",
+			"type": "curse",
+			"desc": "-2 penalty on Temptation tests regarding asking even the most inappropriate questions, handling unique items, eavesdropping, or exploring unfamiliar areas in a city.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": 53,
+			"name": "Shapeshifting",
+			"type": "innate",
+			"desc": "An Exomer can change their appearance by taking a full round to do so, shifting into the natural form of another creature of equivalent stature. The form taken cannot grant them any extra abilities, physical or otherwise, that they already do not possess, e.g. changing into a Pelagus does not grant effective use of multiple arms or water breathing.",
+			"lvlreq":  0,
+			"prereg": []
+		},
+		{
+			"id": ,
+			"name": "",
+			"type": "blessing curse",
+			"desc": "",
+			"lvlreq":  0,
+			"prereg": []
+		}
 	]
 }

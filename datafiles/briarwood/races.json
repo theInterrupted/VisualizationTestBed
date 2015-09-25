@@ -1,11 +1,11 @@
 {
-"races": [
+	"races":[
 	{
-		"name": "Sylvan",
-		"description": "The Sylvan are the woodland descendants, bearing semblance to apes. They emerged standing upright, with various brown shaded skin, overall little body hair, and innately industrious hands. They are blessed with quick minds and creativity, but are cursed with apathy and shame.",
+		"name": "sylvan",
+		"description": "<p>They are the children of the woodlands and jungle, descending from the wild tree-climbers. Legend says they awoke from their former selves, blessed with creativity and endurance, but cursed with apathy and shame. Sylvan walk upright on two legs, with two arms ending in innately industrious hands. They have little to no body hair, except on their heads. Females have no facial hair, while the males can often grow as much on their face as on their head. Their hair ranges from browns, yellows, reds, blacks, and greys; their skin from a pale pearl to dark brown; and their eyes run the gamut of all colors. While their bodies are relatively similar in form to each other, their faces have a great variance of broad to thin, sharp to round, long and stout. Even their ears can vary from squat and round to lithe and pointed.</p><p>As a race, the Sylvan are innately industrious and resolute. They're assemblies and dominions are well-known for their dominance and perseverance. They also innately struggle to sympathize beyond their own familiarities, and have the capacity to harbor great shame on others and themselves.</p>",
 		"stature": 5,
 		"speed": "average",
-		"traits":[
+		"traits":{
 			"charisma": 2,
 			"grit": 2,
 			"creativity": 4,
@@ -16,147 +16,103 @@
 			"scrap": 4,
 			"throw": 2,
 			"sense": 1
-		],
-		"abilities": [
-			"abil_studious",
-			"abil_apathy",
-			"abil_stallegs"
-		]
+		},
+		"abilities": [10, 11, 12, 13]
 	},
 	{
-		"name": "Pelagus",name": "
-		"description": "The Pelagus are children of the seas, bearing semblance to octopuses. They possess large body-heads with deep-set eyes, 8 tentacle arms, and feature skin that each Pelagian can control color and texture. They are blessed with patience and resolve, but are cursed with greed and wrath.",description": "
-		"stature": "4",stature": "
-		"speed": "average",speed": "
-		"charisma": "3",charisma": "
-		"grit": "3",grit": "
-		"creativity": "1",creativity": "
-		"muscle": "2",muscle": "
-		"hide": "4",hide": "
-		"seek": "1",seek": "
-		"scamper": "1",scamper": "
-		"scrap": "1",scrap": "
-		"throw": "1",throw": "
-		"sense": "4",sense": "
-		"Ability": "
-		  "name": "Blessing",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "+1 to Communication Trait at character creation.",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Curse",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "Must succeed at a Grit test equal to the team size in order to contribute a teamwork bonus. And when deeply angered, -1 penalty to all tasks unrelated to vengeful efforts until revenge has been dealt.",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Master of the Seas",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "Pelagus have 8 prehensile, fully usable arms, and for any applicable check where more than 2 arms are used, a +1 bonus is added per extra pair of arms used. The Pelagus can also breath water, but not air. Out of the water they suffer -1 penalties to all tests, and must take Drowning tests until they return to the water.",details": "
-	   ",Ability": "
+		"name": "pelagus",
+		"description": "<p>The Pelagus are children of the seas, descending from the stealthy and clever hunters of the deep. Legends says they parted from their ancestors, blessed with patience and resolve, but cursed with greed and wrath. They possess large body-heads with deep-set eyes, 8 tentacle arms, and delicate skin. The apparent texture and colors can be changed at will, allowing the Pelagus to alter their appearance drastically. Their eyes are the only consistency: dual pupils surrounding in yellows and oranges.</p><p>The Pelagus are renowned for the industry and trade craft, master of the seas. They lack a central society, instead collecting only to collaborate. Their patience is second-to-none and have resolve that rules their businesses. But their greatest barrier is their lust towards capital--beautiful, rare, and shiny treasures. The only thing they love more than treasure and wealth, is vengeance: once focused on a target of their wrath, nothing will avert their focus.</p>",
+		"stature": 3,
+		"speed": "average",
+		"traits":{
+			"charisma": 3,
+			"grit": 3,
+			"creativity": 1,
+			"muscle": 2,
+			"hide": 4,
+			"seek": 1,
+			"scamper": 1,
+			"scrap": 1,
+			"throw": 1,
+			"sense": 4
+		},
+		"abilities": [20, 21, 22, 23]
 	},
 	{
-		"name": "Zavyn",name": "
-		"description": "The Zavyn were borne of the grasslands and savannas, bearing semblance to cacos [cacomistle]. They possess medium-size bodies covered in short brown fur, clawed hands and feet, sharp facial features, and a notably long, striped tail. They normally travel on all-fours, but can stand and walk upright for short distances. They are blessed with resourcefulness and stalwart community, but are cursed with short-sightedness and a hot temper.",description": "
-		"stature": "4",stature": "
-		"speed": "fast",speed": "
-		"charisma": "2",charisma": "
-		"grit": "1",grit": "
-		"creativity": "4",creativity": "
-		"muscle": "1",muscle": "
-		"hide": "4",hide": "
-		"seek": "1",seek": "
-		"scamper": "4",scamper": "
-		"scrap": "1",scrap": "
-		"throw": "1",throw": "
-		"sense": "3",sense": "
-		"Ability": "
-		  "name": "Blessing",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "+1 bonus to checks to ask for aide or information from other Zavyn.",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Curse",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "-1 penalty to all checks regarding preparation for travel or a lengthy task. -1 penalty to Grit for one round when insulted or frustrated due to failing trait tests.",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Agile Climber",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "Zavyn get a +1 bonus to Muscle checks to climb natural obstacles.",details": "
-	   ",Ability": "
+		"name": "zavon",
+		"description": "<p>The Zavon are children of the grasslands and savannas, descending from the communal gatherers. Legend says one day thousands of years ago, a dual sunrise brought about new sight, blessing them with resourcefulness and a stalwart community, but cursing them with short-sightedness and a hot temper. Zavon are covered in short brown fur, with clawed hands and feet, sharp facial features, and a notably long, striped tail. They have deep brown eyes and long, harsh whiskers.</p><p>The Zavon race naturally have an unwavering sense of community and family. They are also masters of tradecraft and bartering. Alone, a single Zavon is likely to struggle with many tasks, but together they are resourceful and are a force to be reckoned with. Additionally, they are agile, adept at moving across both open ground and through the savannah trees. Many of their communities are either mass networked homes woven into the trees or large networks of tunnels.</p>",
+		"stature": 4,
+		"speed": "fast",
+		"traits":{
+			"charisma": 2,
+			"grit": 1,
+			"creativity": 4,
+			"muscle": 1,
+			"hide": 4,
+			"seek": 1,
+			"scamper": 4,
+			"scrap": 1,
+			"throw": 1,
+			"sense": 3
+		},
+		"abilities": [30, 31, 32, 33]
 	},
 	{
-		"name": "Alpyn",name": "
-		"description": "The Alpyn are children of the mountains, bearing semblance to the bearcat. They possess large bodies of thick, long fur, clawed hands and feet, a broad face, long whiskers, and a thick prehensile tail. They always travel on all-fours, but can stand upright if needed. They are adept climbers and mountaineers. They are blessed with strength and endurance, but are cursed with arrogance and impulsiveness.",description": "
-		"stature": "5",stature": "
-		"speed": "average",speed": "
-		"charisma": "1",charisma": "
-		"grit": "4",grit": "
-		"creativity": "1",creativity": "
-		"muscle": "4",muscle": "
-		"hide": "1",hide": "
-		"seek": "2",seek": "
-		"scamper": "1",scamper": "
-		"scrap": "3",scrap": "
-		"throw": "2",throw": "
-		"sense": "3",sense": "
-		"Ability": "
-		  "name": "Blessing",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "Strength and endurance (already added to base abilities)",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Curse",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "When leading a teamwork effort, contributes one less die. -1 penalty to checks against the Temptation of a problem in plain sight you perceive you can resolve.",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Rugged Coat",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "An Alpyn's coat provides significant protection from the elements. Alpyn are immune to cold effects from natural weather.",details": "
-	   ",Ability": "
+		"name": "alpin",
+		"description": "<p>The Alpin's ancestors are great hunters and mountaineers among the rocky and snowy tops of the world. Legend says after the deepest of winters, they awoke from hibernation being blessed with strength and endurance, but cursed with arrogance and impulsiveness. They have thick, long fur bristling in shades of white, yellow, brown, and black, though in the deepest winters, their fur may turn white as snow. Alpin hands and feet are clawed, their face broad, and their tail thick, long, and prehensile.</p><p>The Alpin race grew up and out from some of the harshest regions in Erdon. As such they've developed a rigid and stringent code of society. They learned how to master the mountains, making rock and metal ores do their bidding.</p>",
+		"stature": 5,
+		"speed": "average",
+		"traits":{
+			"charisma": 1,
+			"grit": 4,
+			"creativity": 1,
+			"muscle": 4,
+			"hide": 1,
+			"seek": 2,
+			"scamper": 1,
+			"scrap": 3,
+			"throw": 2,
+			"sense": 3
+		},
+		"abilities": [40, 41, 42, 43]
 	},
 	{
-		"name": "Exomer",name": "
-		"description": "The Exomer descended from the ether, bearing no particular semblance, because they are shape-shifters. They're telling feature is a faint, mist-like aura, unique in colour and appearance to each Exomer, in whatever form they take. Exomer commit themselves to seek companionship with non-Exomers, and rarely are more than two Exomers seen together. They are blessed with a natural proficiency with magicks and loyalty, but cursed with unrelenting curiosity and stubbornness. ",description": "
-		"stature": "4",stature": "
-		"speed": "fast",speed": "
-		"charisma": "2",charisma": "
-		"grit": "4",grit": "
-		"creativity": "1",creativity": "
-		"muscle": "1",muscle": "
-		"hide": "1",hide": "
-		"seek": "4",seek": "
-		"scamper": "3",scamper": "
-		"scrap": "3",scrap": "
-		"throw": "2",throw": "
-		"sense": "1",sense": "
-		"Ability": "
-		  "name": "Blessing",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "At character creation, add 1 level to any one Magic trait. +1 bonus to all Magic and combat tests when guarding a companion.",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Curse",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "-2 penalty on Temptation tests regarding asking even the most inappropriate questions, handling unique items, eavesdropping, or exploring unfamiliar areas in a city.",details": "
-	   ",Ability": "
-		"Ability": "
-		  "name": "Shapeshifting",name": "
-		  "level": "0",level": "
-		  "prereq": "",prereq": "
-		  "details": "An Exomer can change their appearance by taking a full round to do so, shifting into the natural form of another creature of equivalent stature. The form taken cannot grant them any extra abilities, physical or otherwise, that they already do not possess, e.g. changing into a Pelagus does not grant effective use of multiple arms or water breathing.",details": "
-	   ",Ability": "
+		"name": "exomer",
+		"description": "<p>The Exomer, unlike the other Erdovan, descended from the ether itself. Legend holds that the ether itself willed the Exomer into existence, born of sheer desire, and blessed with natural magicks and loyalty, but cursed with unrelenting curiosity and stubbornness. They are born as amorphous beings, bearing no particular semblance through their younger years beyond a pale blue undulation. But quickly, an Exomer learns their first miraculous power--shape-shifting. They may take the forms of other similar sized creatures, but never truly indistinguishable. Their telling feature is a blue hue and faint blue mist-like aura in whatever form they take.</p><p>The Exomer innately seek out companionship, but oddly preferring the other Erdovan. Rarely are more than two Exomer even seen together, as they are only truly intrigued by those unlike them. They are intelligent diplomats and fierce friends, and face their greatest challenge when opposing loyalties collide. Their natural skills with the ether magicks have encouraged them to be great teachers at the colleges of magic.</p>",
+		"stature": 4,
+		"speed": "fast",
+		"traits": {
+			"charisma": 2,
+			"grit": 4,
+			"creativity": 1,
+			"muscle": 1,
+			"hide": 1,
+			"seek": 4,
+			"scamper": 3,
+			"scrap": 3,
+			"throw": 2,
+			"sense": 1
+		},
+		"abilities": [50, 51, 52, 53]
+	},
+	{
+		"name": "nephoros",
+		"description": "<p>The Nephoros are children of the central [cloud mountains]--floating rocks and boulders stretching into the sky and anchored by various roots and vines from the wild flora. Legend says they awoke in the clouds, being blessed with intelligence and ingenuity, but cursed with cowardice and gullibility.</p><p></p>",
+		"stature": 3,
+		"speed": "average",
+		"traits": {
+			"charisma": 3,
+			"grit": 1,
+			"creativity": 4,
+			"muscle": 1,
+			"hide": 4,
+			"seek": 3,
+			"scamper": 2,
+			"scrap": 1,
+			"throw": 1,
+			"sense": 2
+		},
+		"abilities": [60, 61, 62, 63]
 	}
-]}
+]
+}

@@ -6,10 +6,11 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="description" content="This is a test.">
 		<meta name="author" content="theInterrupted">
-		<title>This is Only a Test</title>
+		<title>Ready Player One!</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/globe.css" />
 	</head>
 	<body role="document">
 		<!-- Fixed navbar -->
@@ -26,6 +27,7 @@
 				</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
+					<li><a href="#home">Home</a></li>
 					<li class="active"><a href="#new">New</a></li>
 					<li><a href="#save">Save</a></li>
 					<li><a href="#load">Load</a></li>
@@ -48,7 +50,10 @@
 		</nav>
 		<div>
 			<ol class="summary">
-				<li id="charname"></li>
+				<li id="charname">
+					<label for="cname">Character Name:</label>
+					<input type="text" class="form-control" id="cname">
+				</li>
 				<li id="erdovan"></li>
 				<li id="archetype"></li>
 				<li id="homeland"></li>
@@ -56,156 +61,188 @@
 			</ol>
 		</div>
 		<div class="builder-menu">	  
-		  <div class="panel-group" id="accordion">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Erdovan</a>
-					</h4>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="setViewerImage()">Erdovan</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="panel-group" id="accordion2">
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion2" href="#collapseA">Alpin</a>
+										</h4>
+									</div>
+									<div id="collapseA" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<div class="alpin-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="pickalpin()">Select</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion2" href="#collapseB">Exomer</a>
+										</h4>
+									</div>
+									<div id="collapseB" class="panel-collapse collapse">
+										<div class="panel-body">
+											<div class="exomer-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="pickexomer()">Select</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion2" href="#collapseC">Nephoros</a>
+										</h4>
+									</div>
+									<div id="collapseC" class="panel-collapse collapse">
+										<div class="panel-body">
+											<div class="nephoros-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="picknephoros()">Select</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion2" href="#collapseD">Sylvan</a>
+										</h4>
+									</div>
+									<div id="collapseD" class="panel-collapse collapse">
+										<div class="panel-body">
+											<div class="sylvan-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="picksylvan()">Select</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion2" href="#collapseE">Zavon</a>
+										</h4>
+									</div>
+									<div id="collapseE" class="panel-collapse collapse">
+										<div class="panel-body">
+											<div class="zavon-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="pickzavon()">Select</button>
+										</div>
+									</div>
+								</div>
+							  </div>
+						</div>
+					</div>
 				</div>
-				<div id="collapseOne" class="panel-collapse collapse in">
-					<div class="panel-body">
-						<!-- -->
-						<div class="panel-group" id="accordion2">
-							<div class="panel panel-secondary">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseA">Alpin</a>
-									</h4>
-								</div>
-								<div id="collapseA" class="panel-collapse collapse in">
-									<div class="panel-body">
-										<p> The Alpin's ancestors are great hunters and mountaineers among the rocky and snowy tops of the world. Legend says after the deepest of winters, they awoke from hibernation being blessed with strength and endurance, but cursed with arrogance and impulsiveness. They have thick, long fur bristling in shades of white, yellow, brown, and black, though in the deepest winters, their fur may turn white as snow. Alpin hands and feet are clawed, their face broad, and their tail thick, long, and prehensile.</p>
-										<p>The Alpin race grew up and out from some of the harshest regions in Erdon. As such they've developed a rigid and stringent code of society. They learned how to master the mountains, making rock and metal ores do their bidding.</p>
-										<button type="button" class="btn btn-default btn-block" onclick="pickalpin()">Select</button>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-secondary">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseB">Exomer</a>
-									</h4>
-								</div>
-								<div id="collapseB" class="panel-collapse collapse">
-									<div class="panel-body">
-										<p>The Exomer, unlike the other Erdovan, descended from the ether itself. Legend holds that the ether itself willed the Exomer into existence, born of sheer desire, and blessed with natural magicks and loyalty, but cursed with unrelenting curiosity and stubbornness. They are born as amorphous beings, bearing no particular semblance through their younger years beyond a pale blue undulation. But quickly, an Exomer learns their first miraculous power--shape-shifting. They may take the forms of other similar sized creatures, but never truly indistinguishable. Their telling feature is a blue hue and faint blue mist-like aura in whatever form they take.</p>
-										<p>The Exomer innately seek out companionship, but oddly preferring the other Erdovan. Rarely are more than two Exomer even seen together, as they are only truly intrigued by those unlike them. They are intelligent diplomats and fierce friends, and face their greatest challenge when opposing loyalties collide. Their natural skills with the ether magicks have encouraged them to be great teachers at the colleges of magic.</p>
-										<button type="button" class="btn btn-default btn-block" onclick="pickexomer()">Select</button>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-secondary">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseC">Nephoros</a>
-									</h4>
-								</div>
-								<div id="collapseC" class="panel-collapse collapse">
-									<div class="panel-body">
-										<p>The Nephoros are children of the central [cloud mountains]--floating rocks and boulders stretching into the sky and anchored by various roots and vines from the wild flora. Legend says they awoke in the clouds, being blessed with intelligence and ingenuity, but cursed with cowardice and gullibility.</p>
-										<p></p>
-										<button type="button" class="btn btn-default btn-block" onclick="picknephoros()">Select</button>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-secondary">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseD">Sylvan</a>
-									</h4>
-								</div>
-								<div id="collapseD" class="panel-collapse collapse">
-									<div class="panel-body">
-										<p>They are the children of the woodlands and jungle, descending from the wild tree-climbers. Legend says they awoke from their former selves, blessed with quick minds and creativity, but cursed with apathy and shame. Sylvan walk upright on two legs, with two arms ending in innately industrious hands. They have little to no body hair, except on their heads. Females have no facial hair, while the males can often grow as much on their face as on their head. Their hair ranges from browns, yellows, reds, blacks, and greys; their skin from a pale pearl to dark brown; and their eyes run the gamut of all colors. While their bodies are relatively similar in form to each other, their faces have a great variance of broad to thin, sharp to round, long and stout. Even their ears can vary from squat and round to lithe and pointed.</p>
-										<p>As a race, the Sylvan are innately industrious and resolute. They're assemblies and dominions are well-known for their dominance and perseverance. They also innately struggle to sympathize beyond their own familiarities, and have the capacity to harbor great shame on others and themselves.</p>
-										<button type="button" class="btn btn-default btn-block" onclick="picksylvan()">Select</button>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-secondary">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseE">Zavon</a>
-									</h4>
-								</div>
-								<div id="collapseE" class="panel-collapse collapse">
-									<div class="panel-body">
-										<p>The Zavon are children of the grasslands and savannas, descending from the communal gatherers. Legend says one day thousands of years ago, a dual sunrise brought about new sight, blessing them with resourcefulness and a stalwart community, but cursing them with short-sightedness and a hot temper. Zavon are covered in short brown fur, with clawed hands and feet, sharp facial features, and a notably long, striped tail. They have deep brown eyes and long, harsh whiskers.</p>
-										<p>The Zavon race naturally have an unwavering sense of community and family. They are also masters of tradecraft and bartering. Alone, a single Zavon is likely to struggle with many tasks, but together they are resourceful and are a force to be reckoned with. Additionally, they are agile, adept at moving across both open ground and through the savannah trees. Many of their communities are either mass networked homes woven into the trees or large networks of tunnels.</p>
-										<button type="button" class="btn btn-default btn-block" onclick="pickzavon()">Select</button>
-									</div>
-								</div>
-							</div>
-						  </div>
-						<!-- -->
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="setViewerImage()">Archetype</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>Archetype accordion</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" onclick="setViewerGlobe()">Homeland</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>Homeland accordian</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" onclick="setViewerImage()">Trade</a>
+						</h4>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>Trade accordian</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Archetype</a>
-					</h4>
-				</div>
-				<div id="collapseTwo" class="panel-collapse collapse">
-					<div class="panel-body">
-						<p>Archetype accordion</p>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Homeland</a>
-					</h4>
-				</div>
-				<div id="collapseThree" class="panel-collapse collapse">
-					<div class="panel-body">
-						<p>Homeland accordian</p>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Trade</a>
-					</h4>
-				</div>
-				<div id="collapseFour" class="panel-collapse collapse">
-					<div class="panel-body">
-						<p>Trade accordian</p>
-					</div>
-				</div>
-			</div>
-		  </div>
-		  
 		</div>
-		<div class="builder-viz">Excellent, is it not?</div>
+		<div class="builder-viz">
+			<div id="imageviewer"></div>
+			<div id="modelviewer"></div>
+			<div id="traits"></div>
+			<div id="raceabilities"></div>
+			<div id="archabilities"></div>
+			<div id="homeabilities"></div>
+			<div id="tradeabilities"></div>
+		</div>
 		
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/d3.v3.min.js"></script>
+		<script src="js/d3.v3.js"></script>
+		<script src="js/queue.v1.min.js"></script>
+		<script src="js/topojson.v0.min.js"></script>
+		<script src="js/globe.js"></script>
+		
 		<script>
+			// End goal:
+			//	Race selection picks the model
+			//	Archetype selection picks model's pose
+			//	Homeland selection picks model's background
+			//	Trade selection picks model's apparel and gear
+			
+			var racedata;
+			var archdata;
+			var homedata;
+			var tradedata;
+			
+			var myRace = "";
+			var myPic = "";
+			var myArch = "";
+			var myHome = "";
+			var myTrade = "";
+			var myModel = "";
+			
+			$.getJSON("datafiles/briarwood/races.json", function(data){
+				racedata = data.races;
+				$.each(racedata, function(index, r){
+					$("." + r.name + "-details")
+						.html(r.description);
+				})
+			})
+		
 			function pickalpin(){
-				pickedErdovan("Alpin");
+				pickedErdovan("Alpin", "face1.png");
 			};
 			function pickexomer(){
-				pickedErdovan("Exomer");
+				pickedErdovan("Exomer", "face2.png");
 			};
 			function picknephoros(){
-				pickedErdovan("Nephoros");
+				pickedErdovan("Nephoros", "face3.png");
 			};
 			function picksylvan(){
-				pickedErdovan("Sylvan");
+				pickedErdovan("Sylvan", "face1.png");
 			};
 			function pickzavon(){
-				pickedErdovan("Zavon");
+				pickedErdovan("Zavon", "face2.png");
 			};
 			
-			function pickedErdovan(name){
-				console.log(name);
-				$("#erdovan").text(name);
+			function pickedErdovan(name, image){
+				myRace = name;
+				myPic = image;
+				setName(name);
+				setViewerImage(image);
 			}
 			
 			function pickedArchetype(name){
@@ -222,6 +259,30 @@
 				console.log(name);
 				$("#trade").text(name);
 			}
+			
+			function setName(name){
+				$("#erdovan").text(name);
+			}
+			
+			function setViewerImage(image){
+				console.log("View image");
+				d3.select("#modelviewer").select("svg")
+					.attr("height", 0);
+				$("#imageviewer").height(500);
+				if (typeof image !== "undefined"){
+					$("#imageviewer").html("<img src=\"datafiles/briarwood/" + image + "\" alt=\"image\"/>");
+				}
+			}
+			
+			function setViewerGlobe(){
+				console.log("View globe");
+				$("#imageviewer").height(0);
+				d3.select("#modelviewer").select("svg")
+					.attr("height", 500);
+			}
+			
+			// Just to kick this off
+			pickalpin();
 		</script>
 	</body>
 </html>
