@@ -1,0 +1,24 @@
+{
+	"archetypes":[
+	{
+		"name": "explorer",
+		"description": "<p>Explorers are the methodical experimenters, testers, toilers, and tinkerers. How does it work? What happens if this gets changed? How are these connected? They pursuit the ins and outs and hows and whys of the world they live in. Explorers focus on their environment, whether alone or not--people can wait their turn after the entire universe is understood.</p>",
+		"abilities": [110, 111, 112]
+	},
+	{
+		"name": "adventurer",
+		"description": "<p>Adventurers are the organizers, treasure seekers, and achievers. What can be found in the next town? Where are the greatest crafts and treasures? They are the whimsical goal setters and getters, driven to see what the world has to offer. Adventurers are out for the next best pursuit, thriving on travel and horrified by stagnation.</p>",
+		"abilities": [120, 121, 122]
+	},
+	{
+		"name": "socialite",
+		"description": "<p>Socialites are the gossips, diplomats, the networked contacts, and close-knit kin. Who is that? What commonalities can we bond over? What can we achieve together? They live to interact--to bond with others, whether networking acquaintances or having an unbound kinship with friends and family. They thrive with others, and are haunted by the idea of being truly alone.</p>",
+		"abilities": [130, 131, 132]
+	},
+	{
+		"name": "director",
+		"description": "<p>Directors are the leaders, visionaries, magnates, senators, bullies, and tyrants. Who will follow me? What can that person do for me? Will they be useful once I assert my command? They strive to act upon those around them, perhaps to lead or inspire, but also perhaps to control, manipulate, or exploit. Directors thrive off control and superiority, but whither over inferiority and submission.</p>",
+		"abilities": [140, 141, 142]
+	}
+]
+}

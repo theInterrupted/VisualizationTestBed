@@ -136,7 +136,7 @@
 										</div>
 									</div>
 								</div>
-							  </div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -148,7 +148,60 @@
 					</div>
 					<div id="collapseTwo" class="panel-collapse collapse">
 						<div class="panel-body">
-							<p>Archetype accordion</p>
+							<div class="panel-group" id="accordion3">
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion3" href="#collapseF">Explorer</a>
+										</h4>
+									</div>
+									<div id="collapseF" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<div class="explorer-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="pickexplorer()">Select</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion3" href="#collapseG">Adventurer</a>
+										</h4>
+									</div>
+									<div id="collapseG" class="panel-collapse collapse">
+										<div class="panel-body">
+											<div class="adventurer-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="pickadventurer()">Select</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion3" href="#collapseH">Socialite</a>
+										</h4>
+									</div>
+									<div id="collapseH" class="panel-collapse collapse">
+										<div class="panel-body">
+											<div class="socialite-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="picksocialite()">Select</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-secondary">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion3" href="#collapseJ">Director</a>
+										</h4>
+									</div>
+									<div id="collapseJ" class="panel-collapse collapse">
+										<div class="panel-body">
+											<div class="director-details"></div>
+											<button type="button" class="btn btn-default btn-block" onclick="pickdirector()">Select</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -221,28 +274,49 @@
 						.html(r.description);
 				})
 			})
+			
+			$.getJSON("datafiles/briarwood/archetypes.json", function(data){
+				archdata = data.archetypes;
+				$.each(archdata, function(index, r){
+					$("." + r.name + "-details")
+						.html(r.description);
+				})
+			})
 		
 			function pickalpin(){
 				pickedErdovan("Alpin", "face1.png");
-			};
+			}
 			function pickexomer(){
 				pickedErdovan("Exomer", "face2.png");
-			};
+			}
 			function picknephoros(){
 				pickedErdovan("Nephoros", "face3.png");
-			};
+			}
 			function picksylvan(){
 				pickedErdovan("Sylvan", "face1.png");
-			};
+			}
 			function pickzavon(){
 				pickedErdovan("Zavon", "face2.png");
-			};
+			}
 			
 			function pickedErdovan(name, image){
 				myRace = name;
 				myPic = image;
 				setName(name);
 				setViewerImage(image);
+			}
+			
+			function pickexplorer(){
+				pickedArchetype("Explorer");
+			}
+			function pickadventurer(){
+				pickedArchetype("Adventurer");
+			}
+			function picksocialite(){
+				pickedArchetype("Socialite");
+			}
+			function pickdirector(){
+				pickedArchetype("Director");
 			}
 			
 			function pickedArchetype(name){
