@@ -3,11 +3,11 @@ d3.select(window)
     .on("mousemove", mousemove)
     .on("mouseup", mouseup);
 
-var width = 500,
-    height = 500;
+var width = 600,
+    height = 800;
 
 var projection = d3.geo.orthographic()
-    .scale(250)
+    .scale(400)
     .translate([width / 2, height / 2])
     .clipAngle(90);
     //.precision(.1);
