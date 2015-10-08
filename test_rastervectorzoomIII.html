@@ -2,6 +2,10 @@
 <meta charset="utf-8">
 <style>
 
+canvas {
+  background: #eee;
+}
+
 svg {
   background: #eee;
   border: 1px solid black;
@@ -11,9 +15,9 @@ svg {
   stroke: rgb(80, 64, 39);  
   stroke-linejoin: miter;
   stroke-width:.1;
-  stroke-opacity:.5;
+  stroke-opacity:1;
   fill: rgb(90,200,58);
-  fill-opacity:.5;
+  fill-opacity:0;
 }
 
 .countries path:hover {
@@ -33,32 +37,27 @@ svg {
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/0.2.9/d3.geo.projection.min.js"></script>
 <body>
 <script>
 
-var width = 800,
-    height = 700;
-
+var width = Math.max(600, window.innerWidth),
+    height = Math.max(400, window.innerHeight),
+	mapCenter = [0,0];
+	
 var projection = d3.geo.mercator()
+	.center(mapCenter)
 	.translate([width / 2, height / 2])
     .scale((width - 1) / 2 / Math.PI);
-	
-var zoom = d3.behavior.zoom()
-    .scaleExtent([1, 15])
-    .on("zoom", zoomed);
 
 var path = d3.geo.path()
     .projection(projection);
 
+var zoom = d3.behavior.zoom()
+    .scaleExtent([1, 15])
+    .on("zoom", zoomed);
+
 var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-	.append("g");
-
-var g = svg.append("g");
-
-svg.append("rect")
-    .attr("class", "overlay")
     .attr("width", width)
     .attr("height", height);
 
@@ -69,12 +68,15 @@ d3.json("datafiles/briarwood/newworld_topo_highres.json", function(error, world)
   
   var features = topojson.feature(world, world.objects.countries).features;
   
-  g.append("path")
-      .datum({type: "Sphere"})
-      .attr("class", "sphere")
-      .attr("d", path);
+  svg.append("svg:image")
+    .attr("xlink:href", "")
+    .attr("x", "0")
+	.attr("y", "0")
+	.attr("width", width)
+	.attr("height", height)
+	.attr("d", path);
   
-  g.attr("class", "countries")
+  svg.append("g").attr("class", "countries")
     .selectAll("path")
 	  .data(features)
 	.enter().append("path")
@@ -83,13 +85,9 @@ d3.json("datafiles/briarwood/newworld_topo_highres.json", function(error, world)
 });
 
 function zoomed() {
-	g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-	//projection.scale(d3.event.scale);
-	//projection.translate(d3.event.translate);
-	//g.selectAll("path")
-	//	.attr("d", path);
+  svg.attr("transform", "translate(" + zoom.translate() + ")scale(" + zoom.scale() + ")");  
+  
+  svg.selectAll("path").style("stroke-width", 1 / zoom.scale());
 }
-
-d3.select(self.frameElement).style("height", height + "px");
 
 </script>

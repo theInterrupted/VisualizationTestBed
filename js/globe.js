@@ -3,14 +3,13 @@ d3.select(window)
     .on("mousemove", mousemove)
     .on("mouseup", mouseup);
 
-var width = 600,
-    height = 800;
+var width = Math.min(600, window.innerWidth/2),
+    height = Math.min(600, window.innerHeight);
 
 var projection = d3.geo.orthographic()
-    .scale(400)
+    .scale(500)
     .translate([width / 2, height / 2])
     .clipAngle(90);
-    //.precision(.1);
 
 var path = d3.geo.path().projection(projection).pointRadius(1.5);
 
