@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="1000"
+   height="500"
+   viewBox="0 0 1000 500.00001"
+   id="svg2"
+   version="1.1">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4150">
+      <stop
+         id="stop4152"
+         offset="0"
+         style="stop-color:#e38b00;stop-opacity:1" />
+      <stop
+         id="stop4154"
+         offset="1"
+         style="stop-color:#ff0000;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4698">
+      <stop
+         style="stop-color:#007cbe;stop-opacity:1"
+         offset="0"
+         id="stop4700" />
+      <stop
+         style="stop-color:#0039bc;stop-opacity:0"
+         offset="1"
+         id="stop4702" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient4698"
+       id="linearGradient4704"
+       x1="419.30197"
+       y1="545.92651"
+       x2="417.33167"
+       y2="991.47107"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0284771,0,0,1.0790921,19.874333,-27.134627)" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="500"
+       x2="491.27466"
+       y1="0"
+       x1="492.57535"
+       id="linearGradient4156"
+       xlink:href="#linearGradient4150" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     y="0"
+     x="0"
+     height="500"
+     width="1000"
+     id="rect4148"
+     style="opacity:1;fill:url(#linearGradient4156);fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
+  <path
+     id="path4158"
+     d="M 0,500 0,250 c 261.30899,-150.634211 741.61399,152.51343 1000,0 l 0,250 z"
+     style="fill:#ffffff;fill-opacity:0.57471266;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>

@@ -1,0 +1,8 @@
+Generate high detail coastline
+Generate region polygons and names: deserts, mountain ranges, forests
+Generate water and names: Oceans, seas, lakes, bays, coves
+Generate rivers and names: rivers, streams
+Generate Dominions territory borders and names
+Generate cities, towns, and settlement points
+Generate highways and roads and names
+Generate notable landmarks and names: historical sites, natural phenomena, bridges

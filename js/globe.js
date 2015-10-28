@@ -3,8 +3,8 @@ d3.select(window)
     .on("mousemove", mousemove)
     .on("mouseup", mouseup);
 
-var width = Math.min(600, window.innerWidth/2),
-    height = Math.min(600, window.innerHeight);
+var width = Math.max(600, window.innerWidth),
+    height = Math.max(600, window.innerHeight);
 
 var projection = d3.geo.orthographic()
     .scale(500)
@@ -95,7 +95,8 @@ function ready(error, world, names, places) {
 		.style("fill", "url(#globe_shading)");
 		
 	// hover-able country outlines
-    svg.append("g").attr("class","countries")
+    svg.append("g")
+	   .attr("class","countries")
        .selectAll("path")
          .data(topojson.object(world, world.objects.countries).geometries)
        .enter().append("path")
@@ -105,17 +106,19 @@ function ready(error, world, names, places) {
 	//Places points and labels
 	svg.append("g")
 		.attr("class","points")
-        .selectAll("text").data(places.features)
+        .selectAll("text")
+		.data(places.features)
       .enter().append("path")
         .attr("class", "point")
         .attr("d", path);
 
     svg.append("g")
 		.attr("class","labels")
-        .selectAll("text").data(places.features)
+        .selectAll("text")
+		.data(places.features)
       .enter().append("text")
-      .attr("class", "label")
-      .text(function(d) { return d.properties.name })
+        .attr("class", "label")
+        .text(function(d) { return d.properties.name })
 	   
 	position_labels();
 }
